@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(to right, #111111, #222222);
+    color: #ffffff;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main{
+   padding-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 16px 16px 10px #494949cc;
+    border-radius: 20px;
+    background-color: #2222228a;
+    width: 35%;
+    height: 65%;
+    transition: 0.8s;
+}
+.main:hover{
+    padding: 110px;
+}
+
+.face{
+    height: 250px;
+    width: 60px;
+    background-color: #fce2c4;
+    border: 4px solid #ffa945;
+    border-bottom: none;
+    transform: rotate(4deg);
+    transition: 0.8s;
+}
+.face::after{
+    content: "";
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    top: 170px;
+    left: -12px;
+    background-color: #fce2c4;
+    border-left: 6px solid  #ffa945;
+    border-bottom: 4px solid #ffa945;
+    border-bottom-left-radius: 10px;
+    transform: skew(-40deg);
+}
+.face::before{
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    top: 80px;
+    left: 56px;
+    background-color: #fce2c4;
+    border-right: 4px solid  #ffa945;
+    border-bottom: 4px solid #ffa945;
+    transform: rotate(-40deg);
+}
+
+.nose{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #fce2c4;
+    border: 4px solid #ffa945;
+    border-right: none;
+    right: 115px;
+    bottom: 35px;
+    border-radius: 14px 0px 0px 14px;
+    transform: rotate(4deg);
+    z-index: 1;
+}
+.nose::after{
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 20px;
+    background-color: #fce2c4;
+    border-top: 4px solid #ffa945;
+    left: 49px;
+    top: -4px;
+}
+
+.eye{
+    position: relative;
+    height: 44px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    right: 131px;
+    bottom: 81px;
+    border: 3px solid #000000;
+    transform: rotate(4deg);
+    z-index: 0;
+}
+.eye::before{
+    content: "";
+    position: absolute;
+    left: 14px;
+    top: 22px;
+    height: 12px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #000000;
+    transform: rotate(16deg);
+}
+.eye::after{
+    content: "";
+    position: absolute;
+    left: 18px;
+    top: 24px;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.eye2{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    right: 148px;
+    bottom: 71px;
+    border: 3px solid #000000;
+    transform: rotate(4deg);
+    z-index: 2;
+}
+.eye2::before{
+    content: "";
+    position: absolute;
+    left: 14px;
+    top: 20px;
+    height: 12px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #000000;
+    transform: rotate(16deg);
+}
+.eye2::after{
+    content: "";
+    position: absolute;
+    left: 18px;
+    top: 22px;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.hair{
+    background-color: #ffffff;
+    position: relative;
+    bottom: 120px;
+    right: 200px;
+    z-index: 3;
+}
+
+.hair #a{
+    position: absolute;
+    right: -60px;
+    bottom: -10px;
+    height: 30px;
+    width: 100px;
+    border-top: 20px solid green;
+    border-radius: 50px 40px 0 0;
+    transform: rotate(30deg);
+}
+
+.hair #b{
+    position: absolute;
+    right: -80px;
+    bottom: 0px;
+    height: 30px;
+    width: 80px;
+    border-top: 20px solid green;
+    border-radius: 50px 40px 0 0;
+    transform: rotate(130deg);
+}
+
+.hair #c{
+    position: absolute;
+    right: -80px;
+    bottom: -10px;
+    height: 30px;
+    width: 100px;
+    border-top: 20px solid green;
+    border-radius: 50px 40px 0 0;
+    transform: rotate(70deg);
+}
+
+.hair #d{
+    position: absolute;
+    right: -80px;
+    bottom: -28px;
+    height: 30px;
+    width: 100px;
+    border-top: 21px solid green;
+    border-radius: 50px 40px 0 0;
+    transform: rotate(20deg);
+}
+
+.hair #e{
+    position: absolute;
+    right: -100px;
+    bottom: -28px;
+    height: 30px;
+    width: 50px;
+    border-top: 21px solid green;
+    border-radius: 50px 40px 0 0;
+    transform: rotate(10deg);
+}
